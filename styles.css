@@ -1,0 +1,162 @@
+/* 通用样式 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #e6e6fa, #dcdcdc); /* 柔和的蓝灰色渐变背景 */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    border: 1px solid #ccc; /* 细边框增加层次感 */
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* 增加文字阴影 */
+    position: relative;
+    z-index: 1;
+}
+
+#songbookButtons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+#songbookButtons button {
+    margin: 10px;
+    padding: 12px 24px; /* 增大按钮尺寸 */
+    font-size: 18px; /* 增大字体 */
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 颂赞按钮样式 */
+#songbookButtons button[data-songbook="songbook1"] {
+    background-color: #8B0000; /* 深红色，象征神圣和庄重 */
+}
+
+#songbookButtons button[data-songbook="songbook1"]:hover {
+    background-color: #A52A2A; /* 浅红色，悬停效果 */
+    transform: translateY(-2px);
+}
+
+/* 彩虹之歌按钮样式 */
+#songbookButtons button[data-songbook="songbook2"] {
+    background: linear-gradient(to right, #ff7f7f, #f8b195, #f6c85f, #88d8b0); /* 加深的彩虹渐变 */
+    color: #333; /* 深色文字，增加对比度 */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* 增加文字阴影 */
+}
+
+#songbookButtons button[data-songbook="songbook2"]:hover {
+    background: linear-gradient(to right, #88d8b0, #f6c85f, #f8b195, #ff7f7f); /* 反向渐变，悬停效果 */
+    transform: translateY(-2px);
+}
+
+#rangeList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.range-link {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    text-align: center; /* 文字居中 */
+    text-decoration: none;
+    color: #fff; /* 白色文字 */
+    border-radius: 5px;
+    width: 120px;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+}
+
+/* 颂赞歌本范围按钮样式 */
+.range-link.songbook1 {
+    background-color: #b22222; /* 浅红色 */
+}
+
+.range-link.songbook1:hover {
+    background-color: #cd5c5c; /* 更浅的红色 */
+}
+
+/* 彩虹之歌范围按钮样式 */
+.range-link.songbook2 {
+    background: linear-gradient(to right, #ffb3b3, #fbc4a4, #f9d78c, #b2e2c2); /* 浅彩虹渐变 */
+    color: #333; /* 深色文字，增加对比度 */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* 增加文字阴影 */
+}
+
+.range-link.songbook2:hover {
+    background: linear-gradient(to right, #b2e2c2, #f9d78c, #fbc4a4, #ffb3b3); /* 反向浅彩虹渐变 */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+li a {
+    text-decoration: none;
+    color: #007bff;
+    display: block;
+    transition: color 0.3s;
+}
+
+li a:hover {
+    color: #0056b3;
+}
+
+.back-link {
+    margin-bottom: 20px;
+}
+
+.back-link a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-link a:hover {
+    background-color: #ddd;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
